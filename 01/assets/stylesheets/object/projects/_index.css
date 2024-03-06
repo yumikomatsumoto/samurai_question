@@ -1,0 +1,71 @@
+/* 共通部分のレイアウト */
+.whole {
+  margin: 0 auto;
+}
+
+.l-main{
+  display: flex;
+  height: 250px;
+}
+
+.l-header{
+  height: 100px;
+}
+
+.l-footer{
+  height: 100px;
+}
+
+
+/* PCスタイルのメディアクエリ */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .whole {
+    width: 400px;
+  }
+
+  .l-header {
+    background-color: #141f40;
+  }
+
+  .section-first {
+    width: 250px;
+    background-color: #8c2727;
+  }
+
+  .section-second {
+    width: 150px;
+    background-color: #80bfa8;
+  }
+
+  .l-footer {
+    background-color: #d98d30;
+  }
+}
+
+/* SPスタイルのメディアクエリ */
+@media screen and (max-width: 767px) {
+  .whole {
+    width: 100vw;
+  }
+
+  .l-header {
+    background-color: #e91e63;
+  }
+  
+  .l-main {
+    flex-flow: column;
+    width: 100%;
+  }
+  
+  .section-first {
+    background-color: #0093b7;
+  }
+  
+  .section-second {
+    background-color: #dbd400;
+  }
+  
+  .l-footer {
+    background-color: #170e38;
+  }
+}
