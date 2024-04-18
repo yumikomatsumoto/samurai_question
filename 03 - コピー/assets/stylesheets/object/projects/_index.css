@@ -1,0 +1,126 @@
+/* リキッドレイアウト */
+.whole {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 共通スタイル */
+.l-header {
+  height: 100px;
+  padding: 10px;
+}
+
+.headerLogo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background-color: #81c7ff;
+}
+
+.mainBox {
+  max-width: 960px;
+  padding: 15px;
+}
+
+.sidebar {
+  max-width: 240px;
+  padding: 15px;
+}
+
+.sidebarLink {
+  display: flex;
+  display: column;
+  width: 150px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: solid 1px #80bfa8;
+}
+
+.l-footer {
+  height: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: small;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* 共通テキストスタイル設定 */
+.mainContent {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.subContent {
+  font-size: 18px;
+  margin: 15px 0;
+}
+.mainText {
+  font-size: 14px;
+}
+
+.importantText {
+  color: #ff1a48;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header {
+    background-color: #141f40;
+  }
+
+  .headerLink {
+    display: flex;
+  }
+
+  .headerLinkContent {
+    flex: 1;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    background-color: #b8b8f3;
+    border: solid 1px #0e0e78;
+  }
+
+  .l-main {
+    display: flex;
+  }
+
+  .mainBox {
+    background-color: #80bfa8;
+  }
+
+  .sidebar {
+    background-color: #8c2727;
+  }
+
+  .l-footer {
+    background-color: #d98d30;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .headerLink {
+    display: none;
+  }
+
+  .l-header {
+    background-color: #e91e63;
+  }
+
+  .mainBox {
+    background-color: #0093b7;
+  }
+
+  .sidebar {
+    background-color: #dbd400;
+  }
+
+  .l-footer {
+    background-color: #170e38;
+    color: #fff;
+  }
+}
